@@ -2,6 +2,7 @@ package example.androidapp.huffmancode.huffman;
 
 import java.util.HashMap;
 
+import de.blox.graphview.Graph;
 import de.blox.graphview.Node;
 
 public class Main {
@@ -30,6 +31,7 @@ public class Main {
            HuffmanTree tree = new HuffmanTree();
            PrefixCode demo = new PrefixCode();
            tree = demo.createTree(charFrequency);
+           PrefixCode.graph = new Graph();
            demo.printCode(new Node(new Prefix("","")),tree, new StringBuffer());
            return demo.prefixCodes;
        }

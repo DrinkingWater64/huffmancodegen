@@ -7,7 +7,7 @@ import de.blox.graphview.Graph;
 import de.blox.graphview.Node;
 
 public class PrefixCode {
-    public static Graph graph = new Graph();
+    public static Graph graph;
 
     HashMap<String, String> prefixCodes = new HashMap<>();
 
