@@ -21,20 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:onClick="onGo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:clickable="true"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stringinput"
-        app:srcCompat="@android:drawable/arrow_down_float" />
-
 
     <LinearLayout
         android:id="@+id/resultgroup"
@@ -43,10 +29,10 @@
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/aboutbutton"
+        app:layout_constraintBottom_toTopOf="@id/aboutbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton">
+        app:layout_constraintTop_toBottomOf="@id/stringinput">
 
         <TextView
             android:id="@+id/generatedstring"
